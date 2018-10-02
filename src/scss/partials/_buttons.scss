@@ -1,0 +1,36 @@
+.button {
+    padding: 16px 32px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    clear: left;
+}
+
+.successbutton {
+    @extend .button;
+    background-color: $estonianWhite;
+    color: $estonianBlack;
+    border: 4px solid $estonianBlue;
+}
+
+.successbutton:hover {
+    background-color: $estonianBlue;
+    color: $estonianWhite;
+}
+
+.deletebutton {
+    @extend .button;
+    background-color: $estonianWhite; 
+    color: $estonianBlack; 
+    border: 4px solid #f44336;
+}
+
+.deletebutton:hover {
+    background-color: #f44336;
+    color: $estonianWhite;
+}

@@ -1,0 +1,63 @@
+@font-face	{
+	font-family: "CherrySwash-Bold";
+	src: url("../font/CherrySwash-Bold.ttf");
+}
+
+@font-face	{
+	font-family: "CherrySwash-Regular";
+	src: url("../font/CherrySwash-Regular.ttf");
+}
+
+$mainfonts: Verdana, Helvetica;
+
+$estonianBlue: #0072ce;
+$estonianWhite: white;
+$estonianBlack: black;
+
+@import "partials/buttons";
+
+html, body {
+    height: 100%;
+    width: 100%;
+    max-width: 1800px;
+	margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+    font: 16px $mainfonts;   
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+	position: relative;
+}
+
+/*----------------HEADER---------------*/
+
+header {
+	background-color: $estonianBlue;
+	padding: 1%;
+    color: $estonianWhite;
+    width: 100%;
+    max-width: 1850px;
+}
+
+#LogoName {
+	font-family: "CherrySwash-Bold", Verdana;
+	font-size: 35px;
+	margin-left: 15%;
+}
+
+@import "partials/nav";
+
+@import "partials/images";
+
+/* ------------ CONTENT ---------------*/
+
+@import "partials/columns";
+
+/* ------------ FOOTER ---------------*/
+
+@import "partials/footer";

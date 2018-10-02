@@ -1,0 +1,80 @@
+/*----------------NAV-Bar Import---------------*/
+
+ /* Nested navbar */
+ #navbar {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1800px;
+    background-color: $estonianBlack;
+    padding-left: 5%;
+
+    a {
+      float: left;
+      display: block;
+      font-family: "CherrySwash-Regular", 'sans-serif', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      margin-left: 5%;
+      padding: 25px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: darken($estonianWhite, 10%);
+      color: $estonianBlack;
+    }
+
+    a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+  }
+
+
+  #navLogo {
+      display: none;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky #navLogo {
+      margin-left: 5%;
+      padding: 0;
+      color: white;
+      float: left;
+      font-family: "CherrySwash-Bold";
+      display: block;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .wrapper {
+    padding-top: 60px;
+ } 
+  
+  @media all and (max-width: 1300px) { 
+    
+    #navbar {
+      position: static;
+      padding-left: 0;
+    }
+    
+    /* Navbar links */
+    #navbar a {
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 0;
+      margin-left: 0;
+      width: 100%;
+    }
+  }

@@ -1,0 +1,33 @@
+/*----------------Column - stylesheet Import---------------*/
+
+.centercontent {
+    max-width: 1080px;
+    width: 100%;
+    margin-left: 20%;
+    align-content: center;
+}
+
+.leftcolumn {
+    width: 39%;
+    float: left;
+}
+
+.rightcolumn {
+    width: 51%;
+    margin-left: 2%;
+    float: left;
+}
+
+@media all and (max-width: 1320px) {
+    .centercontent {
+        width: 100%;
+        margin-left: 9%;
+        
+    }
+
+    .centercontent, .rightcolumn, .leftcolumn {
+        width: 100%;
+        margin: 0;
+        padding-left: 1%;
+    }
+}
